@@ -1,0 +1,6 @@
+.fixed-img {
+    width: 100%;
+    height: auto;
+    max-height: 220px;      /* máximo tamaño permitido */
+    object-fit: contain;    /* muestra TODA la imagen sin cortar */
+}
