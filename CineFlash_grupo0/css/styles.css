@@ -1,0 +1,6 @@
+.fixed-img {
+    width: 100%;
+    height: 400px; /* altura uniforme */
+    object-fit: cover; /* recorta sin deformar */
+
+}
