@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Consejos de Seguridad</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body class="bg-light">
+
+<!-- NAV -->
+<nav class="navbar navbar-expand-md bg-dark px-3">
+    <a href="index.html" class="navbar-brand text-white fw-semibold">Inicio</a>
+
+    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks">
+        ☰
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navLinks">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="amenazas.html" class="nav-link text-white">Amenazas Comunes</a>
+            </li>
+            <li class="nav-item">
+                <a href="consejos.html" class="nav-link text-white">Consejos de Seguridad</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<!-- CONTENIDO PRINCIPAL -->
+<section class="container my-4">
+
+    <h2 class="text-center fw-bold mb-4">Consejos de Seguridad</h2>
+    <p class="text-center mb-5">
+        Lista de buenas prácticas para protegerte mientras navegas en internet.
+    </p>
+
+    <!-- LISTA DE BUENAS PRACTICAS -->
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <ul class="list-group shadow-sm">
+                <li class="list-group-item">Usa contraseñas fuertes y diferentes para cada cuenta.</li>
+                <li class="list-group-item">Activa la verificación en dos pasos.</li>
+                <li class="list-group-item">Evita conectarte a redes WiFi públicas sin protección.</li>
+                <li class="list-group-item">No abras correos o enlaces sospechosos.</li>
+                <li class="list-group-item">Mantén tu dispositivo actualizado.</li>
+                <li class="list-group-item">Utiliza antivirus y revisa tu equipo regularmente.</li>
+            </ul>
+        </div>
+    </div>
+
+    <hr class="my-5">
+
+    <!-- FORMULARIO DE CONTACTO -->
+    <h3 class="text-center fw-semibold mb-3">¿Necesitas más información?</h3>
+    <p class="text-center">Envíanos tus dudas y te responderemos.</p>
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form id="formContacto" class="p-3 border rounded bg-white shadow-sm">
+                <div class="mb-3">
+                    <label class="form-label">Nombre</label>
+                    <input type="text" id="nombre" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Correo</label>
+                    <input type="email" id="correo" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Mensaje</label>
+                    <textarea id="mensaje" class="form-control" rows="3" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-dark w-100">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <hr class="my-5">
+
+    <!-- BOTÓN PARA ABRIR TEST -->
+    <div class="text-center">
+        <button class="btn btn-primary px-4" data-bs-toggle="modal" data-bs-target="#modalTest">
+            🛡 Realizar Test de Seguridad
+        </button>
+    </div>
+
+</section>
+
+
+<!-- MODAL TEST DE SEGURIDAD -->
+<div class="modal fade" id="modalTest" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Test de Seguridad</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+
+                <form id="formTest">
+                    <div class="mb-3">
+                        <label class="form-label">1. ¿Es seguro usar la misma contraseña en todas tus cuentas?</label>
+                        <select class="form-select" id="p1">
+                            <option value="">Selecciona una opción</option>
+                            <option value="no">No</option>
+                            <option value="si">Sí</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">2. ¿Qué debes hacer si recibes un correo sospechoso?</label>
+                        <select class="form-select" id="p2">
+                            <option value="">Selecciona una opción</option>
+                            <option value="ignorar">Ignorarlo y no abrirlo</option>
+                            <option value="abrir">Abrirlo para revisar</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-success w-100">Enviar respuestas</button>
+                </form>
+
+                <div id="resultadoTest" class="mt-3 fw-bold text-center"></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+
+</body>
+</html>

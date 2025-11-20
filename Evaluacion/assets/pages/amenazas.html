@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body class="bg-light">
+    <nav class="navbar navbar-expand-md bg-dark px-3 mb-4">
+        <a href="index.html" class="navbar-brand text-white fw-semibold">
+            Inicio
+        </a>
+
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks">
+            ☰
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navLinks">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="amenazas.html" class="nav-link text-white">Amenazas Comunes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="consejos.html" class="nav-link text-white">Consejos de Seguridad</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container mb-3 justify-content-center text-center">
+        <div class="secciones row text-center text-md-start">
+            <h2>
+                Amenazas Comunes
+            </h2>
+            <p class="text-start">En el mundo digital actual, todos estamos expuestos a riesgos que pueden comprometer
+                nuestra información personal, nuestros dispositivos y hasta nuestra identidad. Conocer las amenazas más
+                comunes es el primer paso para protegerte y tomar decisiones seguras en internet. A continuación,
+                encontrarás una explicación simple y directa de los ataques y peligros que podrías enfrentar en tu día a
+                día.</p>
+        </div>
+
+        <div class="container-fluid my-2 row g-2">
+            <div class="col-md-6 col-lg-4 ">
+                <div class="card h-100 card-select">
+                    <img class="card-img-top object-fit-cover"
+                        src="https://images.ctfassets.net/5i1m3im8l2b5/3wIRSBd1uuCeOlSr34Snlq/22d42b323358ba2de10db9560a9393a3/10-tips-to-prevent-phishing.png?w=1200&h=630&q=50&fm=png"
+                        height="200">
+                    <div class="card-body">
+                        <h3 class="card-title">Phishing</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 card-select">
+                    <img class="card-img-top object-fit-cover"
+                        src="https://web-assets.esetstatic.com/tn/-x700/wls/2025/01-2025/ataque-ransomware-que-hacer.jpeg"
+                        width="100" height="200">
+                    <div class="card-body">
+                        <h3 class="card-title">Ransomware</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 card-select">
+                    <img class="card-img-top object-fit-cover"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRXMcxaeNk-mLMsY1ksLWO2qPb7UusQl7bQQ&s"
+                        width="100" height="200">
+                    <div class="card-body">
+                        <h3 class="card-title">Malware</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 card-select">
+                    <img class="card-img-top object-fit-cover"
+                        src="https://as1.ftcdn.net/jpg/01/11/45/92/1000_F_111459249_YUwxSuCQqqcsBaFCXYPEj36qWt2RKyoj.jpg"
+                        width="100" height="200">
+                    <div class="card-body">
+                        <h3 class="card-title">Ataques DDoS</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid secciones row text-center">
+            <h2>
+                Casos Reales
+            </h2>
+            <div id="carouselExample" class="carousel slide ">
+                <div class="carousel-inner ">
+                    <div class="carousel-item active ">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At tempora officia possimus nemo
+                            magnam consectetur magni impedit nulla, mollitia doloribus! Perspiciatis voluptatem optio
+                            obcaecati similique autem voluptatum. Molestiae, vel sed.</p>
+                        <img src="https://www.ciperchile.cl/wp-content/uploads/2-11-1.jpg"
+                            class="d-block w-100 object-fit-cover rounded" style="height: 400px;" alt="...">
+
+                    </div>
+                    <div class="carousel-item">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At tempora officia possimus nemo
+                            magnam consectetur magni impedit nulla, mollitia doloribus! Perspiciatis voluptatem optio
+                            obcaecati similique autem voluptatum. Molestiae, vel sed.</p>
+                        <img src="https://media.vandalsports.com/i/640x360/11-2025/20251118143140_1.jpg"
+                            class="d-block w-100 object-fit-cover rounded" style="height: 400px;" alt="...">
+
+                    </div>
+                    <div class="carousel-item">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At tempora officia possimus nemo
+                            magnam consectetur magni impedit nulla, mollitia doloribus! Perspiciatis voluptatem optio
+                            obcaecati similique autem voluptatum. Molestiae, vel sed.</p>
+                        <img src="https://static.emol.cl/emol50/Fotos/2018/06/09/file_20180609110008.jpg"
+                            class="d-block w-100 object-fit-cover rounded" style="height: 400px;" alt="...">
+
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <Script src="../js/script.js"></Script>
+</body>
+
+</html>
