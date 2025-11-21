@@ -44,50 +44,8 @@
                 día.</p>
         </div>
 
-        <div class="container-fluid my-2 row g-2">
-            <div class="col-md-6 col-lg-4 ">
-                <div class="card h-100 card-select">
-                    <img class="card-img-top object-fit-cover"
-                        src="https://images.ctfassets.net/5i1m3im8l2b5/3wIRSBd1uuCeOlSr34Snlq/22d42b323358ba2de10db9560a9393a3/10-tips-to-prevent-phishing.png?w=1200&h=630&q=50&fm=png"
-                        height="200">
-                    <div class="card-body">
-                        <h3 class="card-title">Phishing</h3>
-                    </div>
-                </div>
-            </div>
+        <div class="container-fluid my-2 row g-2 container-amenazas">
 
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 card-select">
-                    <img class="card-img-top object-fit-cover"
-                        src="https://web-assets.esetstatic.com/tn/-x700/wls/2025/01-2025/ataque-ransomware-que-hacer.jpeg"
-                        width="100" height="200">
-                    <div class="card-body">
-                        <h3 class="card-title">Ransomware</h3>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 card-select">
-                    <img class="card-img-top object-fit-cover"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRXMcxaeNk-mLMsY1ksLWO2qPb7UusQl7bQQ&s"
-                        width="100" height="200">
-                    <div class="card-body">
-                        <h3 class="card-title">Malware</h3>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 card-select">
-                    <img class="card-img-top object-fit-cover"
-                        src="https://as1.ftcdn.net/jpg/01/11/45/92/1000_F_111459249_YUwxSuCQqqcsBaFCXYPEj36qWt2RKyoj.jpg"
-                        width="100" height="200">
-                    <div class="card-body">
-                        <h3 class="card-title">Ataques DDoS</h3>
-                    </div>
-                </div>
-            </div>
         </div>
         <div class="container-fluid secciones row text-center">
             <h2>
@@ -134,8 +92,28 @@
         </div>
     </section>
 
+    <!-- Modal -->
+    <div class="modal fade" id="amenazaModal" tabindex="-1" aria-labelledby="amenazaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="amenazaLabel"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" >
+                    <div class="text-center">
+                        <img id="imgAmenaza" src="" class="img-fluid rounded mb-3 shadow" alt="Imagen de la amenaza"
+                            style="max-height: 220px; object-fit: cover;">
+                    </div>
 
+                    <h3 id="tituloAmenaza" class="fw-bold text-dark text-center mb-3"></h3>
 
+                    <p id="description" class="text-start lh-base">aaaaaaaaaaa</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -146,7 +124,7 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <Script src="../js/script.js"></Script>
+    <Script src="../js/amenazas.js"></Script>
 </body>
 
 </html>
